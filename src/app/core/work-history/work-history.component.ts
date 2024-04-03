@@ -44,5 +44,6 @@ export class WorkHistoryComponent {
       Experienced 3M maintenance manager for Shipboard Electrical, mechanical, Medical and Dental systems.`
     }
    ]
+   
 
 }
