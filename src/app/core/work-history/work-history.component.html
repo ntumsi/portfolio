@@ -1,1 +1,9 @@
-<p>work-history works!</p>
+<div *ngFor="let work of workHistory">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ work.title }}</h5>
+      <p class="card-text">{{ work.startDate }} - {{ work.endDate }}</p>
+      <h6 class="card-subtitle mb-2 text-muted">{{ work.company }}</h6>
+      <p class="card-text">{{ work.description }}</p>
+    </div>
+  </div>
