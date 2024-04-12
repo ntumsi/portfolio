@@ -1,9 +1,20 @@
-<div *ngFor="let work of workHistory">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">{{ work.title }}</h5>
-      <p class="card-text">{{ work.startDate }} - {{ work.endDate }}</p>
-      <h6 class="card-subtitle mb-2 text-muted">{{ work.company }}</h6>
-      <p class="card-text">{{ work.description }}</p>
+<mat-card>
+<br>
+<fieldset>
+
+<legend>Work History</legend>
+  <div *ngFor="let work of workHistory">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">{{ work.title }}</h3>
+        <p class="card-text">{{ work.startDate }} - {{ work.endDate }}</p>
+        <h4 class="card-subtitle mb-2 text-muted">{{ work.company }}</h4>
+        <p class="card-text">{{ work.description }}</p>
+      </div>
     </div>
+    <br>
   </div>
+</fieldset>
+  <br>
+</mat-card>
+

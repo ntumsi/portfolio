@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { MatCardImage, MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-work-history',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatCardModule, MatCardImage],
   templateUrl: './work-history.component.html',
   styleUrl: './work-history.component.scss'
 })
@@ -33,8 +34,8 @@ export class WorkHistoryComponent {
       Experienced 3M maintenance manager for Shipboard Electrical, mechanical, Medical and Dental systems.`
     },
      {
-      StartDate: "2015",
-      EndDate: "2020",
+      startDate: "2015",
+      endDate: "2020",
       title: "Biomedical Electronics Technician",
       company: "US Navy",
       description: `Proficient in troubleshooting, Systems networking, repair and installation of a vast
@@ -44,6 +45,6 @@ export class WorkHistoryComponent {
       Experienced 3M maintenance manager for Shipboard Electrical, mechanical, Medical and Dental systems.`
     }
    ]
-   
+
 
 }

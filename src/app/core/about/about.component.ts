@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { MatCardMdImage, MatCardModule } from '@angular/material/card';
+import {  MatCardImage, MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [MatCardModule,MatCardMdImage],
+  imports: [MatCardModule,MatCardImage],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })

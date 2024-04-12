@@ -1,11 +1,4 @@
-mat-toolbar{
-  flex: auto;
-  flex-direction: row;
-  text-align:center;
-  justify-content: space-between;
-  position: relative;
-  bottom: 0;
-}
+
 .footer-image{
   color:white;
   max-width: 50px;
@@ -14,7 +7,7 @@ mat-toolbar{
   display: flex;
   align-content: center;
   justify-content: space-around;
-  overflow: hidden;
+  padding-top: 10px;
 }
 .footer{
   position: fixed;
