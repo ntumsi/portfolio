@@ -4,8 +4,8 @@ import { LanguagesComponent } from './core/languages/languages.component';
 import { ProjectsComponent } from './core/projects/projects.component';
 import { TechnologiesComponent } from './core/technologies/technologies.component';
 import { EducationComponent } from './core/education/education.component';
-import { HobiesComponent } from './core/hobies/hobies.component';
 import { WorkHistoryComponent } from './core/work-history/work-history.component';
+import { HobbiesComponent } from './core/hobbies/hobbies.component';
 
 export const routes: Routes = [
   { path: 'About', component: AboutComponent },
@@ -13,7 +13,7 @@ export const routes: Routes = [
   { path: 'Languages', component: LanguagesComponent },
   { path: 'Education', component: EducationComponent },
   { path: 'Technologies', component: TechnologiesComponent },
-  {path: 'Hobbies', component: HobiesComponent},
+  {path: 'Hobbies', component: HobbiesComponent},
   {path: 'WorkHistory', component: WorkHistoryComponent},
   { path: '', redirectTo: '/About', pathMatch: 'full' }
 ];
