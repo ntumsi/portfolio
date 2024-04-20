@@ -1,1 +1,13 @@
-<p>languages works!</p>
+
+   <div *ngFor="let language of languages" class="container">
+
+      <mat-card>
+        <mat-card-content>
+          <mat-card-title>{{ language.name }}</mat-card-title>
+          <mat-card-subtitle><b>Level:</b> {{language.proficiency }}</mat-card-subtitle>
+          <p class="card-text"><a href="{{language.url}}"target="_blank"><img src="{{language.logo }}" width="200px" height="150px"/></a></p>
+        </mat-card-content>
+      </mat-card>
+     <br>
+    </div>
+<!-- </mat-card> -->

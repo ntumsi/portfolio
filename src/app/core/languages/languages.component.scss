@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex: auto;
+  max-width: 350px ;
+  flex-direction: row ;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
