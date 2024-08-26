@@ -1,0 +1,36 @@
+/* Ensures the navbar stays fixed at the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* High z-index to stay on top */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+}
+
+/* Centers the logo and ensures padding is not collapsed */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px; /* Adjust padding as needed */
+}
+
+/* Using Flexbox to evenly distribute navigation links */
+.navbar-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly; /* Evenly spaces the nav items */
+  align-items: center; /* Aligns items vertically */
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+}
+
+/* Style adjustments for individual nav items */
+.nav-item {
+  padding: 10px 15px; /* Adds padding to each nav item for better tap targets */
+}
+
+/* Ensures the content is pushed down so it's not hidden behind the fixed navbar */
+body {
+  padding-top: 150px; /* Adjust this value based on the actual height of your navbar */
+}

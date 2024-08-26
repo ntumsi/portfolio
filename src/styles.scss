@@ -2,6 +2,12 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+// @import 'bootstram/scss/bootstrap.scss';
+// @import 'bootstrap/css/bootstrap.min.css';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+  padding-top: 55px; /* Adjust this value based on the actual height of your navbar */
+}

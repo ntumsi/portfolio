@@ -1,0 +1,50 @@
+/* Ensure the mat-card is a flex container */
+mat-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Style the fieldset */
+fieldset {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* Set up the container for work history items */
+.work-history-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Optional: Adjust spacing between items */
+}
+
+/* Style individual work history cards */
+.card {
+  flex: 1 1 calc(33.333% - 16px); /* Three items per row, adjusting for spacing */
+  box-sizing: border-box;
+  margin-bottom: 16px; /* Space below each card */
+}
+
+/* Ensure the card body takes up the full space */
+.card-body {
+  padding: 16px;
+}
+
+/* Make sure text inside the card is well spaced */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-size: 0.875rem;
+}

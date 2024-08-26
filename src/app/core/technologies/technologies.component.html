@@ -1,19 +1,21 @@
 <br />
 <legend>Technologies</legend>
-<div *ngFor="let technology of technologies">
-  <div class="tile is-full">
+<div class="technologies-container">
+  <div *ngFor="let technology of technologies" class="tile is-full">
     <div class="tile is-one-third">
       <article class="tile is-child notification is-info">
         <h2 class="title">{{ technology.name }}</h2>
         <p class="subtitle">{{ technology.description }}</p>
         <figure class="image is-4by3">
-          <a href="{{ technology.url }}" width="350px" target="_blank"
-            ><img src="{{ technology.icon }}" alt=""
-          /></a>
+          <a href="{{ technology.url }}" target="_blank">
+            <img src="{{ technology.icon }}" alt="{{ technology.name }}" />
+          </a>
         </figure>
       </article>
     </div>
   </div>
+</div>
+
 <!-- <mat-card>
 
   <div class="tile is-full">
