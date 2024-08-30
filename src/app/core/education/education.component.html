@@ -1,97 +1,29 @@
-<br />
-<mat-card  class="content">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Education</h1>
+      <div *ngFor="let education of education">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{education.date}} - {{education.school}}</h5>
+            <p class="card-text"><b>Education:</b> {{education.name}}</p>
+            <p class="card-text"><b>Location:</b> {{education.location}}</p>
+            <p class="card-text">GPA: {{education.gpa}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
- <fieldset>
-   <legend>Education</legend>
-
-   <mat-card-content>
-     <h3>
-       <span>
-         October 2020 – March 2021 - University Of Texas At Austin McCombs School Of Business
-       </span>
-     </h3>
-     <span>
-       Post Graduate Cloud Computing Certification</span
-     >
-   </mat-card-content>
-   <mat-card-content>
-     <h3>
-       <span>
-         October 2016 – March 2018 - Thomas Edison State University
-       </span>
-     </h3>
-     <span>
-       Master of Science in information technology, Software Engineering</span
-     >
-   </mat-card-content>
-
-   <mat-card-content>
-     <h3>Nov 2010 - Sep 2015 - Thomas Edison State University</h3>
-     <span class="Content"
-       >Bachelor of Science Applied Science, Biomedical Electronics
-     </span>
-   </mat-card-content>
-
-   <mat-card-content>
-     <h3>
-       July 2008 - October 2009 Community college of the Airforce
-     </h3>
-     <span class="Content"
-       >Department of Defence Tri-service Biomedical electronics training and
-       certification
-     </span>
-   </mat-card-content>
-
-   <mat-card-content>
-     <h3>2006 July 31 – October 13 - Naval Medical Training Center</h3>
-     <span class="Content"> Hospital Corpsman training school </span>
-   </mat-card-content>
-
-   <mat-card-content>
-     <h3>2004 June 3- June 17 </h3>
-
-     <span class="Content">
-       Airman Apprenticeship Training School (Pensacola, Florida)</span
-     >
-   </mat-card-content>
-
-   <mat-card-content>
-     <h3>2004 April 13-June 3 </h3>
-     <span class="Content"
-       >Basic Military Education and Training (Basic Military Training School
-       Great Lakes, Illinois)
-     </span>
-   </mat-card-content>
-   <mat-card-content>
-     <h3>1996 </h3>
-     <span class="Content"
-       >High School (Cameroon College of Art Science and Technology)
-     </span>
-   </mat-card-content>
-  </fieldset>
-</mat-card>
-
-
-<br />
-
-
-<mat-card style="text-align: center;">
-  <mat-card-title>Certifications</mat-card-title
-  ><br />
-  <mat-card-content>
-    <h1>July 2019 - CompTia Security+ Certification</h1>
-    <span class="Content"> CompTia Certified security professional </span>
-  </mat-card-content>
-
-  <mat-card-content>
-    <h1>July 2018 - March 2016 Woz U - Certified Software Developer</h1>
-    <span class="Content"
-      >Learned how to build web applications using React and AngularJS. Mobile
-      web development with Ionic/Cordova. Acquired skills to program using Java,
-      build database-driven web applications using spring MVC, and create richly
-      interactive client-side apps using the JavaScript AngularJS library.
-      Worked 60 + hours weekly on individual and team projects.
-    </span>
-  </mat-card-content> </mat-card
-><br />
-
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Certifications</h1>
+      <div *ngFor="let certification of certifications">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{certification.date}} - {{certification.title}}</h5>
+            <p class="card-text"><b>Description:</b> {{certification.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>

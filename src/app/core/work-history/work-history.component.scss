@@ -1,50 +1,61 @@
 /* Ensure the mat-card is a flex container */
 mat-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 16px;
-  box-sizing: border-box;
-}
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-/* Style the fieldset */
-fieldset {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
+  fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
-/* Set up the container for work history items */
-.work-history-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px; /* Optional: Adjust spacing between items */
-}
+    legend {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      padding: 0 10px;
+    }
 
-/* Style individual work history cards */
-.card {
-  flex: 1 1 calc(33.333% - 16px); /* Three items per row, adjusting for spacing */
-  box-sizing: border-box;
-  margin-bottom: 16px; /* Space below each card */
-}
+    .card {
+      margin-bottom: 1.5rem;
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: box-shadow 0.3s ease;
 
-/* Ensure the card body takes up the full space */
-.card-body {
-  padding: 16px;
-}
+      &:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
 
-/* Make sure text inside the card is well spaced */
-.card-title {
-  font-size: 1.25rem;
-  margin-bottom: 8px;
-}
+      .card-body {
+        padding: 1.5rem;
 
-.card-subtitle {
-  font-size: 1rem;
-  margin-bottom: 12px;
-}
+        .card-title {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: #2c3e50;
+          margin-bottom: 0.75rem;
+        }
 
-.card-text {
-  font-size: 0.875rem;
+        .card-subtitle {
+          font-size: 1.2rem;
+          color: #7f8c8d;
+          margin-bottom: 1rem;
+        }
+
+        .card-text {
+          font-size: 1rem;
+          color: #555;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  br {
+    display: none;
+  }
 }
