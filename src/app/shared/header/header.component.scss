@@ -4,15 +4,40 @@
   top: 0;
   width: 100%; /* Full width */
   z-index: 1000; /* High z-index to stay on top */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
-}
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
 
-/* Centers the logo and ensures padding is not collapsed */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 10px; /* Adjust padding as needed */
+  .navbar-toggler {
+    display: none; /* Hide the hamburger by default */
+
+    @media (max-width: 991.98px) { /* Visible only on screens smaller than 992px */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px; /* Adjust padding as needed */
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 992px) {
+      margin-left: 0;
+      margin-right: 0;
+      display: inline-block;
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+
+    @media (min-width: 992px) {
+      justify-content: flex-start;
+    }
+  }
 }
 
 /* Using Flexbox to evenly distribute navigation links */

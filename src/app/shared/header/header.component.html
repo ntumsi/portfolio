@@ -1,49 +1,39 @@
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="assets/lah.jpg" alt="logo" style="width: 50px; height: 50px; border-radius: 50px;" />
-    </a>
-    <button class="navbar-toggler" type="button"
-            (click)="toggleNavbar()" aria-controls="navbarNav"
-            [attr.aria-expanded]="!isNavbarCollapsed" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" [class.show]="!isNavbarCollapsed" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="About" routerLinkActive="active">About</a>
-            </li>
-
-          <li class="nav-item">
-            <a class="nav-link" routerLink="WorkHistory" routerLinkActive="active"
-              >WorkHistory</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="Languages" routerLinkActive="active"
-              >Languages</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="Technologies" routerLinkActive="active"
-              >Technologies</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="Education" routerLinkActive="active"
-              >Education</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="Projects" routerLinkActive="active"
-              >Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="Hobbies" routerLinkActive="active">Hobbies</a>
-          </li>
-      </ul>
-    </div>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="assets/lah.jpg" alt="logo" style="width: 50px; height: 50px; border-radius: 50px;" />
+  </a>
+  <button class="navbar-toggler" type="button"
+          (click)="toggleNavbar()" aria-controls="navbarNav"
+          [attr.aria-expanded]="!isNavbarCollapsed" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [class.show]="!isNavbarCollapsed" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="About" routerLinkActive="active" (click)="closeNavbar()">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="WorkHistory" routerLinkActive="active" (click)="closeNavbar()">WorkHistory</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Languages" routerLinkActive="active" (click)="closeNavbar()">Languages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Technologies" routerLinkActive="active" (click)="closeNavbar()">Technologies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Education" routerLinkActive="active" (click)="closeNavbar()">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Projects" routerLinkActive="active" (click)="closeNavbar()">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Hobbies" routerLinkActive="active" (click)="closeNavbar()">Hobbies</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 

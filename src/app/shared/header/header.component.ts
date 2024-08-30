@@ -12,8 +12,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class HeaderComponent {
   isNavbarCollapsed = true;
+
   toggleNavbar() {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
+  closeNavbar() {
+    this.isNavbarCollapsed = true;
   }
 
 }
